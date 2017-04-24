@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -23,6 +23,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <IntermediateDirectory>build\</IntermediateDirectory>
     <PrimaryOutput>Launchy</PrimaryOutput>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <OutputDirectory>..\release\</OutputDirectory>
@@ -31,6 +32,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <IntermediateDirectory>build\</IntermediateDirectory>
     <PrimaryOutput>Launchy</PrimaryOutput>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings" />
@@ -54,7 +56,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>e:\QT\4.8.5\include\QtCore;e:\QT\4.8.5\include\QtNetwork;e:\QT\4.8.5\include\QtGui;e:\QT\4.8.5\include;..\common;e:\LIB\boost_1_55_0\;e:\QT\4.8.5\include\ActiveQt;build;.;e:\QT\4.8.5\mkspecs\win32-msvc2010;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>c:\QT\4.8.5\include\QtCore;c:\QT\4.8.5\include\QtNetwork;c:\QT\4.8.5\include\QtGui;c:\QT\4.8.5\include;..\common;c:\boost\boost_1_64_0\;c:\QT\4.8.5\include\ActiveQt;build;.;c:\QT\4.8.5\mkspecs\win32-msvc2010;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>build\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
@@ -76,8 +78,8 @@
       <WarningLevel>Level3</WarningLevel>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>shell32.lib;user32.lib;gdi32.lib;ole32.lib;comctl32.lib;advapi32.lib;userenv.lib;netapi32.lib;e:\QT\4.8.5\lib\QtGuid4.lib;e:\QT\4.8.5\lib\QtNetworkd4.lib;e:\QT\4.8.5\lib\QtCored4.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>e:\QT\4.8.5\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>shell32.lib;user32.lib;gdi32.lib;ole32.lib;comctl32.lib;advapi32.lib;userenv.lib;netapi32.lib;c:\QT\4.8.5\lib\QtGuid4.lib;c:\QT\4.8.5\lib\QtNetworkd4.lib;c:\QT\4.8.5\lib\QtCored4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>c:\QT\4.8.5\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
       <DataExecutionPrevention>true</DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
